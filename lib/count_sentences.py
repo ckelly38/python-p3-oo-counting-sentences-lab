@@ -35,7 +35,7 @@ class MyString:
 
   def count_sentences(self):
     myostr = self.remExtraPunctuation(self.value);
-    print(f"myostr = {myostr}");
+    #print(f"myostr = {myostr}");
     #although it is not proper no one gave us a list of abbreviations we would have to search for...
     #unfortunately something like "My DNA. is different than yours." would change the count
     #it is easy without an ignore list, but something like that would have 2 instead of 1.
@@ -45,5 +45,5 @@ class MyString:
         cnt += 1;
     return cnt;
 
-tststr = MyString("Stupid sentence!!!");
-print(tststr.count_sentences());
+#tststr = MyString("Stupid sentence!!!");
+#print(tststr.count_sentences());
